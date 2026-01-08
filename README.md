@@ -1,10 +1,10 @@
 # Zillow Scraper
 
-[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.com/products/web-scraper/zillow) 
+[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/web-scraper/zillow) 
 
-This repository provides two distinct methods for scraping Zillow data:
-1. A free, small-scale scraper for basic data collection
-2. An enterprise-grade API solution for large-scale data extraction
+이 리포지토리는 Zillow 데이터를 スクレイピング하기 위한 두 가지 서로 다른 방법을 제공합니다:
+1. 기본적인 데이터 수집을 위한 무료 소규모 스크레이퍼
+2. 대규모 데이터 추출을 위한 엔터프라이즈급 API 솔루션
 
 ## Table of Contents
 - [Free Zillow Data Scraper](#free-zillow-data-scraper)
@@ -21,16 +21,16 @@ This repository provides two distinct methods for scraping Zillow data:
 - [Support & Resources](#support--resources)
 
 ## Free Zillow Data Scraper
-The free scraper allows you to collect property data from Zillow search pages on a small scale.
+무료 스크레이퍼를 사용하면 소규모로 Zillow 검색 페이지에서 부동산 데이터를 수집할 수 있습니다.
 
 ### Input Requirements
 | Parameter | Required | Description |
 |-----------|----------|-------------|
-| coords    | Yes      | Boundary coordinates [west, east, south, north] |
-| pages     | Yes      | Number of pages to scrape |
+| coords    | Yes      | 경계 좌표 [west, east, south, north] |
+| pages     | Yes      | スクレイピング할 페이지 수 |
 
 ### Implementation
-To use the scraper, modify the coordinates and page count in the following code according to your location and data requirements:
+스크레이퍼를 사용하려면, 위치와 데이터 요구사항에 맞게 아래 코드에서 좌표와 페이지 수를 수정하십시오:
 ```python
 # free_zillow_scraper/property_data.py
 def get_search_params():
@@ -43,7 +43,7 @@ def get_search_params():
     )
 ```
 
-**Hint:** Geographical coordinates can be found in the `<script>` tag of Zillow's search page for any location. Look for the following tag:
+**힌트:** 지리 좌표는 어떤 위치든 Zillow 검색 페이지의 `<script>` 태그에서 찾을 수 있습니다. 다음 태그를 확인하십시오:
 ```bash
 <script id="__NEXT_DATA__" type="application/json">
 ```
@@ -78,45 +78,45 @@ def get_search_params():
 ```
 
 ## Limitations of Free Scraper
-The free Zillow scraper works well for small-scale data extraction but has the following limitations:
+무료 Zillow 스크레이퍼는 소규모 데이터 추출에는 잘 작동하지만, 다음과 같은 제한이 있습니다:
 
-- **Rate Limiting:** Zillow blocks requests after a few scrapes.
-- **IP Blocking:** Frequent scraping from the same IP can lead to bans.
-- **Limited Scalability:** Not suitable for high-volume data collection.
-- **Captcha:** Zillow may present CAPTCHAs to block automated requests.
-- **Honeypots:** Zillow uses honeypot traps to detect and block bots.
+- **レート制限:** 몇 차례 スクレイピング 후 Zillow가 리クエスト를 차단합니다.
+- **IPアドレス 차단:** 동일한 IP아ドレス에서 빈번히 スクレイピング하면 차단(밴)될 수 있습니다.
+- **제한된 확장성:** 대용량 데이터 수집에는 적합하지 않습니다.
+- **CAPTCHA:** Zillow는 자동화된 리クエスト를 차단하기 위해 CAPTCHA를 표시할 수 있습니다.
+- **허니팟:** Zillow는 봇을 탐지하고 차단하기 위해 허니팟 트랩을 사용합니다.
 
-For large-scale scraping, consider using the **Zillow Scraper API** described below.
+대규모 スクレイピング의 경우, 아래에 설명된 **Zillow Scraper API** 사용을 고려하십시오.
 
 ##  Zillow Scraper API
-The Bright Data [Zillow Scraper API](https://brightdata.com/products/web-scraper/zillow) provides a scalable, reliable, and hassle-free solution for extracting large-scale Zillow data without the need to build or maintain your own infrastructure.
+Bright Data [Zillow Scraper API](https://brightdata.co.kr/products/web-scraper/zillow)는 자체 인프라를 구축하거나 유지보수할 필요 없이, 대규모 Zillow 데이터를 확장 가능하고 안정적이며 번거로움 없이 추출할 수 있는 솔루션을 제공합니다.
 
 ### Key Features
-- **Scalable & Reliable:** Optimized for high-volume and real-time data collection.
-- **Anti-Blocking:** Built-in proxy rotation and CAPTCHA solving.
-- **Legal Compliance:** Fully GDPR and CCPA compliant.
-- **Global Coverage:** Access data from any region or language.
-- **Real-Time Data:** Fresh data with minimal latency.
-- **Advanced Filtering:** Customize data extraction with precise filters.
-- **Pay-as-You-Go:** Only pay for successful responses.
-- **Free Trial:** Includes 20 free API calls to get started.
-- **Dedicated Support:** 24/7 technical assistance.
-- **No-Code Option:** Scrape Zillow data via API or no-code scrapers.
+- **확장 가능 & 신뢰성:** 대용량 및 실시간 데이터 수집에 최적화되어 있습니다.
+- **차단 방지:** 내장 プロキシ 로ーテーション 및 CAPTCHA 해결 기능을 제공합니다.
+- **법적 준수:** GDPR 및 CCPA를 완전히 준수합니다.
+- **글로벌 커버리지:** 모든 지역 또는 언어에서 데이터에 접근할 수 있습니다.
+- **실시간 데이터:** 지연을 최소화한 최신 데이터를 제공합니다.
+- **고급 필터링:** 정밀한 필터로 데이터 추출을 사용자 지정할 수 있습니다.
+- **사용량 기반 과금:** 성공한 レスポンス에 대해서만 비용을 지불합니다.
+- **무료 체험:** 시작을 위한 무료 API 호출 20회를 포함합니다.
+- **전담 지원:** 24/7 기술 지원을 제공합니다.
+- **No-Code 옵션:** API 또는 no-code 스크레이퍼를 통해 Zillow 데이터를 スクレイピング할 수 있습니다.
 
 ### Quick Start Guide
-- **Sign Up:** Create a [Bright Data account](https://brightdata.com/).
-- **Get API Token:** Obtain your [API key](https://docs.brightdata.com/general/account/api-token) from the dashboard.
-- **Choose Endpoint:** Select from the available API endpoints below.
+- **가입:** [Bright Data account](https://brightdata.co.kr/)를 생성하십시오.
+- **API Token 받기:** 대시보드에서 [API key](https://docs.brightdata.com/general/account/api-token)를 받으십시오.
+- **エンドポイント 선택:** 아래의 사용 가능한 API エンドポイント 중에서 선택하십시오.
 
 ## 1. Zillow Property Details by URL
-Collect property details by providing the property URL.
+부동산 URL을 제공하여 부동산 상세 정보를 수집합니다.
 
 <img width="700" alt="zillow-properties-listing-information" src="https://github.com/luminati-io/zillow-scraper/blob/main/zillow-images/zillow-properties-listing-information.png" />
 
 ### Input Parameters
 | Parameter | Required | Description            |
 |-----------|----------|------------------------|
-| `url`       | Yes      | Zillow property URL   |
+| `url`       | Yes      | Zillow 부동산 URL   |
 
 
 ### Example Request
@@ -128,7 +128,7 @@ properties = [
 ]
 ```
 
-👉 Complete Python script: [zillow_properties.py](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_properties.py)
+👉 전체 Python 스크립트: [zillow_properties.py](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_properties.py)
 
 #### cURL Command:
 ```bash
@@ -172,21 +172,21 @@ curl -H "Authorization: Bearer YOUR_API_TOKEN" \
 }
 ```
 
-👉 This is a partial response. See the [full JSON response](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_data/zillow_properties.json) for complete property details.
+👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_data/zillow_properties.json)를 확인하십시오.
 
 ## 2. Zillow Properties Listing by Filters
-Search properties using location and other criteria.
+위치 및 기타 기준을 사용하여 부동산을 검색합니다.
 
 <img width="700" alt="zillow-properties-listing-by-input" src="https://github.com/luminati-io/zillow-scraper/blob/main/zillow-images/zillow-properties-listing-by-input.png" />
 
-💡 **Note:** Some properties may have multiple units, which can result in several records. To limit results, use the [Limit per input](https://docs.brightdata.com/scraping-automation/web-scraper-api/overview#limit-records).
+💡 **Note:** 일부 부동산은 여러 유닛을 포함할 수 있으며, 이로 인해 여러 레코드가 생성될 수 있습니다. 결과를 제한하려면 [Limit per input](https://docs.brightdata.com/scraping-automation/web-scraper-api/overview#limit-records)을 사용하십시오.
 
 ### Input Parameters
 | Parameter       | Required | Description                                          |
 |---------------|----------|------------------------------------------------------|
-| `location`      | Yes      | Can be a zip code, city, or state.                   |
-| `listingCategory` | Yes    | Options: Sold, House for rent, House for sale.       |
-| `HomeType`      | Yes      | Home type from Zillow (e.g., Houses, Apartments, Townhomes). |
+| `location`      | Yes      | 우편번호, 도시 또는 주가 될 수 있습니다.                   |
+| `listingCategory` | Yes    | 옵션: Sold, House for rent, House for sale.       |
+| `HomeType`      | Yes      | Zillow의 주거 유형(예: Houses, Apartments, Townhomes). |
 
 
 ### Example Request
@@ -198,7 +198,7 @@ filters = [
     {"location": "Colorado", "listingCategory": "", "HomeType": ""},
 ]
 ```
-👉 Complete Python script: [zillow_discovered_properties.py](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_discovered_properties.py)
+👉 전체 Python 스크립트: [zillow_discovered_properties.py](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_discovered_properties.py)
 
 #### cURL Command:
 ```bash
@@ -256,21 +256,21 @@ curl -H "Authorization: Bearer YOUR_API_TOKEN" \
 }
 ```
 
-👉 This is a partial response. See the [full JSON response](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_data/zillow_discovered_properties.json) for complete property details.
+👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_data/zillow_discovered_properties.json)를 확인하십시오.
 
 ## 3. Zillow Properties Listing by URL
-Search for properties directly using Zillow search page URLs.
+Zillow 검색 페이지 URL을 사용하여 부동산을 직접 검색합니다.
 
 <img width="700" alt="zillow-properties-listing-by-url" src="https://github.com/luminati-io/zillow-scraper/blob/main/zillow-images/zillow-properties-listing-by-url.png" />
 
 
-💡 **Note:** Some properties may have multiple units, which can result in several records. To limit results, use the [Limit per input](https://docs.brightdata.com/scraping-automation/web-scraper-api/overview#limit-records).
+💡 **Note:** 일부 부동산은 여러 유닛을 포함할 수 있으며, 이로 인해 여러 레코드가 생성될 수 있습니다. 결과를 제한하려면 [Limit per input](https://docs.brightdata.com/scraping-automation/web-scraper-api/overview#limit-records)을 사용하십시오.
 
 
 ### Input Parameters:
 | Parameter | Required | Description                          |
 |-----------|----------|--------------------------------------|
-| `url`       | Yes      | Direct Zillow search URL with complete search parameters |
+| `url`       | Yes      | 완전한 검색 파라メータ를 포함한 직접 Zillow 검색 URL |
 
 ### Example Request
 #### Python Code:
@@ -281,7 +281,7 @@ urls = [
     {"url": "https://www.zillow.com/sands-point-ny/rentals/?searchQueryState=%7B%22isMapVisible%22%3A..."},
 ]
 ```
-👉 Complete Python script: [zillow_discovered_properties_by_url.py](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_discovered_properties_by_url.py)
+👉 전체 Python 스크립트: [zillow_discovered_properties_by_url.py](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_discovered_properties_by_url.py)
 
 #### cURL Command:
 ```bash
@@ -322,10 +322,10 @@ curl -H "Authorization: Bearer YOUR_API_TOKEN" \
     "url": "https://www.zillow.com/homedetails/1937-Churchill-Dr-South-Bend-IN-46617/77029580_zpid/",
 }
 ```
-👉 This is a partial response. See the [full JSON response](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_data/zillow_discovered_properties_by_url.json) for complete property details.
+👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_data/zillow_discovered_properties_by_url.json)를 확인하십시오.
 
 ## 4. Zillow Price History
-Collect pricing history for a property.
+부동산의 가격 이력을 수집합니다.
 
 <img width="700" alt="zillow-price-history" src="https://github.com/luminati-io/zillow-scraper/blob/main/zillow-images/zillow-price-history.png" />
 
@@ -333,7 +333,7 @@ Collect pricing history for a property.
 
 | Parameter | Required | Description            |
 |-----------|----------|------------------------|
-| `url`       | Yes      | Zillow property URL.   |
+| `url`       | Yes      | Zillow 부동산 URL.   |
 
 ### Example Request
 #### Python Code:
@@ -344,7 +344,7 @@ urls = [
     {"url": "https://www.zillow.com/homedetails/930-3rd-St-SE-Hickory-NC-28602/71557289_zpid/"},
 ]
 ```
-👉 Complete Python script: [zillow_price_history.py](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_price_history.py)
+👉 전체 Python 스크립트: [zillow_price_history.py](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_price_history.py)
 
 #### cURL Command:
 ```bash
@@ -368,29 +368,29 @@ curl -H "Authorization: Bearer YOUR_API_TOKEN" \
     "timestamp": "2025-02-09T16:56:42.074Z",
 }
 ```
-👉 This is a partial response. See the [full JSON response](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_data/zillow_price_history.json) for complete property details.
+👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_data/zillow_price_history.json)를 확인하십시오.
 
 ## No-Code Scraper Option
-Bright Data **No-Code Scraper** offers a user-friendly way to collect Zillow data without programming.
-- Configure scrapers in minutes.
-- Automate the entire data collection process.
-- Download results directly in multiple formats.
+Bright Data **No-Code Scraper**는 프로그래밍 없이 Zillow 데이터를 수집할 수 있는 사용자 친화적인 방법을 제공합니다.
+- 몇 분 만에 스크레이퍼를 구성할 수 있습니다.
+- 전체 데이터 수집 프로세스를 자동화할 수 있습니다.
+- 여러 형식으로 결과를 직접 다운로드할 수 있습니다.
 
-For detailed instructions, visit our [Getting Started guide](https://github.com/luminati-io/Zillow-Scraper/blob/main/no-code-scraper.md).
+자세한 안내는 [Getting Started guide](https://github.com/luminati-io/Zillow-Scraper/blob/main/no-code-scraper.md)를 방문하십시오.
 
 ## Additional Options
-Fine-tune your data collection with these parameters:
+다음 파라メータ로 데이터 수집을 세밀하게 조정하십시오:
 
 | **Parameter**       | **Type**   | **Description**                                            | **Example**                  |
 |---------------------|------------|------------------------------------------------------------|------------------------------|
-| `limit`             | `integer`  | Max results per input                                   | `limit=10`                   |
-| `include_errors`    | `boolean`  | Get error reports for troubleshooting                     | `include_errors=true`        |
-| `notify`            | `url`      | Webhook notification URL to be notified upon completion  | `notify=https://notify-me.com/` |
-| `format`            | `enum`     | Output format (e.g., JSON, NDJSON, JSONL, CSV)         | `format=json`                |
+| `limit`             | `integer`  | 입력당 최대 결과 수                                   | `limit=10`                   |
+| `include_errors`    | `boolean`  | 문제 해결을 위한 오류 보고서 받기                     | `include_errors=true`        |
+| `notify`            | `url`      | 완료 시 알림을 받기 위한 웹훅 알림 URL  | `notify=https://notify-me.com/` |
+| `format`            | `enum`     | 출력 형식(예: JSON, NDJSON, JSONL, CSV)         | `format=json`                |
 
-💡 **Pro Tip:** You can deliver data to an [external storage](https://docs.brightdata.com/scraping-automation/web-data-apis/web-scraper-api/overview#via-deliver-to-external-storage) or a [webhook](https://docs.brightdata.com/scraping-automation/web-data-apis/web-scraper-api/overview#via-webhook).
+💡 **Pro Tip:** 데이터를 [external storage](https://docs.brightdata.com/scraping-automation/web-data-apis/web-scraper-api/overview#via-deliver-to-external-storage) 또는 [webhook](https://docs.brightdata.com/scraping-automation/web-data-apis/web-scraper-api/overview#via-webhook)으로 전달할 수 있습니다.
 
 ## Support & Resources
 - **API Documentation:** [Bright Data Docs](https://docs.brightdata.com/scraping-automation/web-scraper-api/trigger-a-collection)
-- **Scraping Best Practices:** [Avoid Getting Blocked](https://brightdata.com/blog/web-data/web-scraping-without-getting-blocked)
-- **Technical Support:** [Contact Us](mailto:support@brightdata.com)
+- **스크레이핑 모범 사례:** [Avoid Getting Blocked](https://brightdata.co.kr/blog/web-data/web-scraping-without-getting-blocked)
+- **기술 지원:** [Contact Us](mailto:support@brightdata.com)
