@@ -1,6 +1,6 @@
 # Zillow Scraper
 
-[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/web-scraper/zillow) 
+[![Promo](https://github.com/bright-kr/LinkedIn-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/web-scraper/zillow) 
 
 이 리포지토리는 Zillow 데이터를 スクレイピング하기 위한 두 가지 서로 다른 방법을 제공합니다:
 1. 기본적인 데이터 수집을 위한 무료 소규모 스크레이퍼
@@ -111,7 +111,7 @@ Bright Data [Zillow Scraper API](https://brightdata.co.kr/products/web-scraper/z
 ## 1. Zillow Property Details by URL
 부동산 URL을 제공하여 부동산 상세 정보를 수집합니다.
 
-<img width="700" alt="zillow-properties-listing-information" src="https://github.com/luminati-io/zillow-scraper/blob/main/zillow-images/zillow-properties-listing-information.png" />
+<img width="700" alt="zillow-properties-listing-information" src="https://github.com/bright-kr/zillow-scraper/blob/main/zillow-images/zillow-properties-listing-information.png" />
 
 ### Input Parameters
 | Parameter | Required | Description            |
@@ -128,7 +128,7 @@ properties = [
 ]
 ```
 
-👉 전체 Python 스크립트: [zillow_properties.py](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_properties.py)
+👉 전체 Python 스크립트: [zillow_properties.py](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_properties.py)
 
 #### cURL Command:
 ```bash
@@ -172,12 +172,12 @@ curl -H "Authorization: Bearer YOUR_API_TOKEN" \
 }
 ```
 
-👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_data/zillow_properties.json)를 확인하십시오.
+👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_data/zillow_properties.json)를 확인하십시오.
 
 ## 2. Zillow Properties Listing by Filters
 위치 및 기타 기준을 사용하여 부동산을 검색합니다.
 
-<img width="700" alt="zillow-properties-listing-by-input" src="https://github.com/luminati-io/zillow-scraper/blob/main/zillow-images/zillow-properties-listing-by-input.png" />
+<img width="700" alt="zillow-properties-listing-by-input" src="https://github.com/bright-kr/zillow-scraper/blob/main/zillow-images/zillow-properties-listing-by-input.png" />
 
 💡 **Note:** 일부 부동산은 여러 유닛을 포함할 수 있으며, 이로 인해 여러 레코드가 생성될 수 있습니다. 결과를 제한하려면 [Limit per input](https://docs.brightdata.com/scraping-automation/web-scraper-api/overview#limit-records)을 사용하십시오.
 
@@ -198,7 +198,7 @@ filters = [
     {"location": "Colorado", "listingCategory": "", "HomeType": ""},
 ]
 ```
-👉 전체 Python 스크립트: [zillow_discovered_properties.py](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_discovered_properties.py)
+👉 전체 Python 스크립트: [zillow_discovered_properties.py](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_discovered_properties.py)
 
 #### cURL Command:
 ```bash
@@ -256,12 +256,12 @@ curl -H "Authorization: Bearer YOUR_API_TOKEN" \
 }
 ```
 
-👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_data/zillow_discovered_properties.json)를 확인하십시오.
+👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_data/zillow_discovered_properties.json)를 확인하십시오.
 
 ## 3. Zillow Properties Listing by URL
 Zillow 검색 페이지 URL을 사용하여 부동산을 직접 검색합니다.
 
-<img width="700" alt="zillow-properties-listing-by-url" src="https://github.com/luminati-io/zillow-scraper/blob/main/zillow-images/zillow-properties-listing-by-url.png" />
+<img width="700" alt="zillow-properties-listing-by-url" src="https://github.com/bright-kr/zillow-scraper/blob/main/zillow-images/zillow-properties-listing-by-url.png" />
 
 
 💡 **Note:** 일부 부동산은 여러 유닛을 포함할 수 있으며, 이로 인해 여러 레코드가 생성될 수 있습니다. 결과를 제한하려면 [Limit per input](https://docs.brightdata.com/scraping-automation/web-scraper-api/overview#limit-records)을 사용하십시오.
@@ -281,7 +281,7 @@ urls = [
     {"url": "https://www.zillow.com/sands-point-ny/rentals/?searchQueryState=%7B%22isMapVisible%22%3A..."},
 ]
 ```
-👉 전체 Python 스크립트: [zillow_discovered_properties_by_url.py](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_discovered_properties_by_url.py)
+👉 전체 Python 스크립트: [zillow_discovered_properties_by_url.py](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_discovered_properties_by_url.py)
 
 #### cURL Command:
 ```bash
@@ -322,12 +322,12 @@ curl -H "Authorization: Bearer YOUR_API_TOKEN" \
     "url": "https://www.zillow.com/homedetails/1937-Churchill-Dr-South-Bend-IN-46617/77029580_zpid/",
 }
 ```
-👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_data/zillow_discovered_properties_by_url.json)를 확인하십시오.
+👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_data/zillow_discovered_properties_by_url.json)를 확인하십시오.
 
 ## 4. Zillow Price History
 부동산의 가격 이력을 수집합니다.
 
-<img width="700" alt="zillow-price-history" src="https://github.com/luminati-io/zillow-scraper/blob/main/zillow-images/zillow-price-history.png" />
+<img width="700" alt="zillow-price-history" src="https://github.com/bright-kr/zillow-scraper/blob/main/zillow-images/zillow-price-history.png" />
 
 ### Input Parameters
 
@@ -344,7 +344,7 @@ urls = [
     {"url": "https://www.zillow.com/homedetails/930-3rd-St-SE-Hickory-NC-28602/71557289_zpid/"},
 ]
 ```
-👉 전체 Python 스크립트: [zillow_price_history.py](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_price_history.py)
+👉 전체 Python 스크립트: [zillow_price_history.py](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_scraper/zillow_price_history.py)
 
 #### cURL Command:
 ```bash
@@ -368,7 +368,7 @@ curl -H "Authorization: Bearer YOUR_API_TOKEN" \
     "timestamp": "2025-02-09T16:56:42.074Z",
 }
 ```
-👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/luminati-io/Zillow-Scraper/blob/main/zillow_api_data/zillow_price_history.json)를 확인하십시오.
+👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_data/zillow_price_history.json)를 확인하십시오.
 
 ## No-Code Scraper Option
 Bright Data **No-Code Scraper**는 프로그래밍 없이 Zillow 데이터를 수집할 수 있는 사용자 친화적인 방법을 제공합니다.
@@ -376,7 +376,7 @@ Bright Data **No-Code Scraper**는 프로그래밍 없이 Zillow 데이터를 �
 - 전체 데이터 수집 프로세스를 자동화할 수 있습니다.
 - 여러 형식으로 결과를 직접 다운로드할 수 있습니다.
 
-자세한 안내는 [Getting Started guide](https://github.com/luminati-io/Zillow-Scraper/blob/main/no-code-scraper.md)를 방문하십시오.
+자세한 안내는 [Getting Started guide](https://github.com/bright-kr/Zillow-Scraper/blob/main/no-code-scraper.md)를 방문하십시오.
 
 ## Additional Options
 다음 파라メータ로 데이터 수집을 세밀하게 조정하십시오:
