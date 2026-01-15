@@ -2,7 +2,7 @@
 
 [![Promo](https://github.com/bright-kr/LinkedIn-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/web-scraper/zillow) 
 
-이 리포지토리는 Zillow 데이터를 スクレイピング하기 위한 두 가지 서로 다른 방법을 제공합니다:
+이 리포지토리는 Zillow 데이터를 스크레이핑하기 위한 두 가지 서로 다른 방법을 제공합니다:
 1. 기본적인 데이터 수집을 위한 무료 소규모 스크레이퍼
 2. 대규모 데이터 추출을 위한 엔터프라이즈급 API 솔루션
 
@@ -27,7 +27,7 @@
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | coords    | Yes      | 경계 좌표 [west, east, south, north] |
-| pages     | Yes      | スクレイピング할 페이지 수 |
+| pages     | Yes      | 스크레이핑할 페이지 수 |
 
 ### Implementation
 스크레이퍼를 사용하려면, 위치와 데이터 요구사항에 맞게 아래 코드에서 좌표와 페이지 수를 수정하십시오:
@@ -80,33 +80,33 @@ def get_search_params():
 ## Limitations of Free Scraper
 무료 Zillow 스크레이퍼는 소규모 데이터 추출에는 잘 작동하지만, 다음과 같은 제한이 있습니다:
 
-- **レート制限:** 몇 차례 スクレイピング 후 Zillow가 리クエスト를 차단합니다.
-- **IPアドレス 차단:** 동일한 IP아ドレス에서 빈번히 スクレイピング하면 차단(밴)될 수 있습니다.
+- **속도 제한:** 몇 차례 스크레이핑 후 Zillow가 리クエスト를 차단합니다.
+- **IP 주소 차단:** 동일한 IP아ドレス에서 빈번히 스크레이핑하면 차단(밴)될 수 있습니다.
 - **제한된 확장성:** 대용량 데이터 수집에는 적합하지 않습니다.
 - **CAPTCHA:** Zillow는 자동화된 리クエスト를 차단하기 위해 CAPTCHA를 표시할 수 있습니다.
 - **허니팟:** Zillow는 봇을 탐지하고 차단하기 위해 허니팟 트랩을 사용합니다.
 
-대규모 スクレイピング의 경우, 아래에 설명된 **Zillow Scraper API** 사용을 고려하십시오.
+대규모 스크레이핑의 경우, 아래에 설명된 **Zillow Scraper API** 사용을 고려하십시오.
 
 ##  Zillow Scraper API
 Bright Data [Zillow Scraper API](https://brightdata.co.kr/products/web-scraper/zillow)는 자체 인프라를 구축하거나 유지보수할 필요 없이, 대규모 Zillow 데이터를 확장 가능하고 안정적이며 번거로움 없이 추출할 수 있는 솔루션을 제공합니다.
 
 ### Key Features
 - **확장 가능 & 신뢰성:** 대용량 및 실시간 데이터 수집에 최적화되어 있습니다.
-- **차단 방지:** 내장 プロキシ 로ーテーション 및 CAPTCHA 해결 기능을 제공합니다.
+- **차단 방지:** 내장 프록시 로ーテーション 및 CAPTCHA 해결 기능을 제공합니다.
 - **법적 준수:** GDPR 및 CCPA를 완전히 준수합니다.
 - **글로벌 커버리지:** 모든 지역 또는 언어에서 데이터에 접근할 수 있습니다.
 - **실시간 데이터:** 지연을 최소화한 최신 데이터를 제공합니다.
 - **고급 필터링:** 정밀한 필터로 데이터 추출을 사용자 지정할 수 있습니다.
-- **사용량 기반 과금:** 성공한 レスポンス에 대해서만 비용을 지불합니다.
+- **사용량 기반 과금:** 성공한 응답에 대해서만 비용을 지불합니다.
 - **무료 체험:** 시작을 위한 무료 API 호출 20회를 포함합니다.
 - **전담 지원:** 24/7 기술 지원을 제공합니다.
-- **No-Code 옵션:** API 또는 no-code 스크레이퍼를 통해 Zillow 데이터를 スクレイピング할 수 있습니다.
+- **No-Code 옵션:** API 또는 no-code 스크레이퍼를 통해 Zillow 데이터를 스크레이핑할 수 있습니다.
 
 ### Quick Start Guide
 - **가입:** [Bright Data account](https://brightdata.co.kr/)를 생성하십시오.
 - **API Token 받기:** 대시보드에서 [API key](https://docs.brightdata.com/general/account/api-token)를 받으십시오.
-- **エンドポイント 선택:** 아래의 사용 가능한 API エンドポイント 중에서 선택하십시오.
+- **엔드포인트 선택:** 아래의 사용 가능한 API 엔드포인트 중에서 선택하십시오.
 
 ## 1. Zillow Property Details by URL
 부동산 URL을 제공하여 부동산 상세 정보를 수집합니다.
@@ -172,7 +172,7 @@ curl -H "Authorization: Bearer YOUR_API_TOKEN" \
 }
 ```
 
-👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_data/zillow_properties.json)를 확인하십시오.
+👉 이는 부분 응답입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_data/zillow_properties.json)를 확인하십시오.
 
 ## 2. Zillow Properties Listing by Filters
 위치 및 기타 기준을 사용하여 부동산을 검색합니다.
@@ -256,7 +256,7 @@ curl -H "Authorization: Bearer YOUR_API_TOKEN" \
 }
 ```
 
-👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_data/zillow_discovered_properties.json)를 확인하십시오.
+👉 이는 부분 응답입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_data/zillow_discovered_properties.json)를 확인하십시오.
 
 ## 3. Zillow Properties Listing by URL
 Zillow 검색 페이지 URL을 사용하여 부동산을 직접 검색합니다.
@@ -322,7 +322,7 @@ curl -H "Authorization: Bearer YOUR_API_TOKEN" \
     "url": "https://www.zillow.com/homedetails/1937-Churchill-Dr-South-Bend-IN-46617/77029580_zpid/",
 }
 ```
-👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_data/zillow_discovered_properties_by_url.json)를 확인하십시오.
+👉 이는 부분 응답입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_data/zillow_discovered_properties_by_url.json)를 확인하십시오.
 
 ## 4. Zillow Price History
 부동산의 가격 이력을 수집합니다.
@@ -368,7 +368,7 @@ curl -H "Authorization: Bearer YOUR_API_TOKEN" \
     "timestamp": "2025-02-09T16:56:42.074Z",
 }
 ```
-👉 이는 부분 レスポンス입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_data/zillow_price_history.json)를 확인하십시오.
+👉 이는 부분 응답입니다. 전체 부동산 상세 정보는 [full JSON response](https://github.com/bright-kr/Zillow-Scraper/blob/main/zillow_api_data/zillow_price_history.json)를 확인하십시오.
 
 ## No-Code Scraper Option
 Bright Data **No-Code Scraper**는 프로그래밍 없이 Zillow 데이터를 수집할 수 있는 사용자 친화적인 방법을 제공합니다.

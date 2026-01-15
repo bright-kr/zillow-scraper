@@ -1,4 +1,4 @@
-Zillow 데이터를 코드 없이 사용자 친화적으로 スクレイピング하려면 Bright Data **No-Code Scraper**를 사용합니다. 다음의 간단한 단계를 따르십시오:
+Zillow 데이터를 코드 없이 사용자 친화적으로 스크레이핑하려면 Bright Data **No-Code Scraper**를 사용합니다. 다음의 간단한 단계를 따르십시오:
 
 ### Step 1: Access the Scraper Marketplace
 1. Bright Data 계정에 로그인합니다
